@@ -1,0 +1,37 @@
+.bigContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 54vw 54vw 54vw 10vw;
+    grid-template-areas: 
+    "nav1"
+    "box2"
+    "box3"
+    "box4";
+
+    border: 3px solid black;
+    margin: 0 auto;
+}
+
+.container1 {
+    grid-area: "nav1";
+    border: 3px solid red;
+}
+
+.container2 {
+    grid-area: "box2";
+    border: 3px solid green;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.container3 {
+    grid-area: "box3";
+    border: 3px solid yellow;
+}
+
+.container4 {
+    grid-area: "box4";
+    border: 3px solid blue;
+}
