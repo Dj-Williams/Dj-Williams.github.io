@@ -1,3 +1,39 @@
+/* This sets the gloal scroll behavior propery to smooth which allows the nav links to scroll to different parts of the page. */
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+}
+
+/* Navbar */
+
+/* container for nav menu itmes */
+.nav {
+    width: 30%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;background-color: rgba(224, 255, 255, 0.274); 
+    position: fixed;
+    color: rgb(173, 190, 94);
+    right: 30px;
+    
+}
+
+/* nav options spacing and styling */
+li {
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid white; 
+    color: rgb(243, 214, 171);
+    font-size: 15px;
+    background-color: rgba(0, 0, 255, 0.151);
+}
+
+/* Grid styling for the Page Layout */
 .bigContainer {
     display: grid;
     grid-template-columns: 100%;
@@ -7,15 +43,29 @@
     "box2"
     "box3"
     "box4";
-
-    border: 3px solid black;
-    margin: 0 auto;
+    grid-gap: 10px;
+    
+    
 }
 
+/* code for first container */
 .container1 {
     grid-area: "nav1";
     border: 3px solid red;
+    display: flex;
+    flex-direction: row-reverse; 
 }
+
+/* code for first parallax */
+
+.laxOne{
+    background-image: url(/images/background.jpeg);
+
+}
+
+.laxTwo {
+    padding: 100%;
+} 
 
 .container2 {
     grid-area: "box2";
@@ -23,7 +73,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    grid-template-areas: 
+    "champ1 final2";
     
+}
+
+.champlooBox{
+    grid-area: "champ1";
+    border: 2px solid black; 
+}
+
+.bebopBox{
+    grid-area: "final2";
+    border: 2px solid violet; 
 }
 
 .container3 {
