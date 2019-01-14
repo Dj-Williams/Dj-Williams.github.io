@@ -1,0 +1,97 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.contentContainer {
+    height: 98vh;
+    width: 97vw;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+
+.firstSlideContainer {
+    width: 100%;
+    height: 54vw;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 100vw 100vw;
+    z-index: 5;
+}
+
+#nameBox {
+    background-image: url(https://images.unsplash.com/photo-1464809142576-df63ca4ed7f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: -10;
+}
+/* END NAME SECTION */
+
+/* START ABOUT ME SECTION */
+
+.myImg {
+    width: 200px;
+    height: 200px;
+    background-image: url(https://media.licdn.com/dms/image/C5603AQGXmGjqssMezw/profile-displayphoto-shrink_200_200/0?e=1553126400&v=beta&t=Fwy9PWx4WKKfbVOA1rj5DAu9EcK0AGa6GPGGHXt9Vko);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+    border-radius: 50px;
+}
+
+.aboutTextBox {
+    border: 5px dotted white;
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+
+}
+
+/* START SKILLS SECTION */
+
+.gridStyle {
+    height: 200px;
+    background-color: rgba(27, 44, 138, 0.377);
+    background-blend-mode: color-dodge;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+/* logos inside of the skills table in the skills section */
+#html {
+    height: 200px;
+    background-image: url(http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png);
+    background-color: rgba(27, 44, 138, 0.377);
+    background-blend-mode: color-dodge;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#css {
+    height: 200px;
+    background-image: url(../images/iconcss.png);
+    background-color: rgba(27, 44, 138, 0.377);
+    background-blend-mode: color-dodge;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#javaScript {
+    height: 200px;
+    background-image: url(../images/iconcss.png);
+    background-color: rgba(27, 44, 138, 0.377);
+    background-blend-mode: color-dodge;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
