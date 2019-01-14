@@ -53,6 +53,7 @@
     align-items: center; 
 
 }
+/* END ABOUT ME SECTION */
 
 /* START SKILLS SECTION */
 
@@ -68,23 +69,12 @@
 
 /* logos inside of the skills table in the skills section */
 #html {
-    height: 200px;
     background-image: url(http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png);
-    background-color: rgba(27, 44, 138, 0.377);
-    background-blend-mode: color-dodge;
-    background-position: center;
-    background-size: 50%;
-    background-repeat: no-repeat;
+  
 }
 
 #css {
-    height: 200px;
     background-image: url(../images/iconcss.png);
-    background-color: rgba(27, 44, 138, 0.377);
-    background-blend-mode: color-dodge;
-    background-position: center;
-    background-size: 50%;
-    background-repeat: no-repeat;
 }
 
 #javaScript {
@@ -109,11 +99,24 @@
 
 /* END SKILLS SECTION */
 
+/* START PROJECTS SECTION */
+
+.pic {
+    max-width: 70vw;
+    max-height: 70vh;
+}
+
+.carousel-caption {
+    margin-bottom: 330px;
+}
+
+/* END PROJECTS SECTION */
+
 /* START CALL TO ACTION */
 .lineBoi {
     border-bottom: 5px solid white;
     border-width: 10px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     
 }
 
