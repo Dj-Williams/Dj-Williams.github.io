@@ -113,22 +113,31 @@
 .lineBoi {
     border-bottom: 5px solid white;
     border-width: 10px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
     
 }
 
 .email {
-    height: 100px;
-    width: 100px; 
+    height: 150px;
+    width: 150px; 
     background-image: url("images/email.png");
     background-position: center;
     background-size: cover;
 }
 
 .resume {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     background-image: url("images/resume.png");
     background-position: center;
     background-size: cover;
+}
+
+.gitHub {
+    height: 150px;
+    width: 150px;
+    background-image: url("images/github.png");
+    background-position: center;
+    background-size: cover;
+    /* background-color: beige; */
 }
