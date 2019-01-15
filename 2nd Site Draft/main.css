@@ -13,7 +13,6 @@ body {
     width: 97vw;
     color: white;
     background-color: black;
-    border: 2px solid white;
 }
 
 
@@ -233,7 +232,6 @@ body {
 }
 
 .aboutTextBox {
-    /* border: 5px dotted white; */
     width: 800px;
     height: 300px;
     text-align: center;
@@ -256,7 +254,6 @@ body {
 
 .gridStyle {
     height: 200px;
-    border: 2px solid white;
     background-color: rgba(27, 44, 138, 0.377);
     background-blend-mode: color-dodge;
     background-position: center;
@@ -359,5 +356,12 @@ body {
     background-image: url("images/github.png");
     background-position: center;
     background-size: cover;
-    /* background-color: beige; */
+}
+
+.phone {
+    height: 150px;
+    width: 150px;
+    background-image: url("https://cdn4.iconfinder.com/data/icons/rcons-phone/16/handset_round-2-512.png");
+    background-position: center;
+    background-size: cover;
 }
