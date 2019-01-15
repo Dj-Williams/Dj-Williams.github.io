@@ -40,10 +40,6 @@ li {
     overflow: hidden;
 }
 
-li:hover {
-    font-size: 150%;
-    transition-duration: 1s;
-}
 
 /* Grid styling for the Page Layout */
 .bigContainer {

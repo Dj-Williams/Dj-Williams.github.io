@@ -1,0 +1,367 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #08131E;
+}
+
+.contentContainer {
+    height: 98vh;
+    width: 97vw;
+    color: white;
+    background-color: black;
+}
+
+
+.firstSlideContainer {
+    width: 100%;
+    height: 50vw;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 100vw 100vw;
+    z-index: 5;
+}
+
+#nameSplash {
+    display: flex;
+    flex: 1;
+    margin: 0;
+}
+
+#bam {
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    opacity: 0;
+    background-image: url(https://images.unsplash.com/photo-1505629557752-b84ec6489bef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(84, 117, 209, 0.582);
+    /* Animation Stuff */
+    animation: creativeFadeIn ease 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 4.5s;
+}
+
+#welcome {
+    font-size: 100px;
+    opacity: 0;
+    /* Animation Stuff */
+    animation: creativeFadeIn ease 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+#titleName {
+    opacity: 0;
+    /* Animation Stuff */
+    animation: creativeFadeIn ease 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+}
+
+#titleName2 {
+    opacity: 0;
+    /* Animation Stuff */
+    animation: creativeFadeIn ease 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 7.5s;
+}
+
+#titleName3 {
+    opacity: 0;
+    /* Animation Stuff */
+    animation: creativeFadeIn ease 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 9s;
+}
+
+#titleName4 {
+    opacity: 0;
+    /* Animation Stuff */
+    animation: creativeFadeIn ease 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 10.5s;
+}
+
+#titleName5 {
+    opacity: 0;
+    /* Animation Stuff */
+    animation: creativeFadeIn ease 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 12.5s;
+}
+
+#developer {
+    background-image: url(https://images.unsplash.com/photo-1526253038957-bce54e05968e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(143, 41, 143, 0.815);
+    flex: 1;
+    text-shadow:-2px 1px 20px rgb(28, 22, 214);
+    font-weight:normal;
+    font-style:italic;
+    text-transform:uppercase;
+    color:rgb(81, 101, 230);
+    letter-spacing:-2pt;
+    transform: translateY(1000px);
+    /* Animation Stuff */
+    animation: animationFrames ease 1.5s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+}
+
+#nameBox {
+    background-image: url(https://images.unsplash.com/photo-1495333003700-eb75daae834b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80);
+    background-blend-mode: multiply;
+    background-color: rgba(131, 127, 127, 0.616);
+    background-position: center;
+    background-size: 100%;
+    flex: 1;
+    text-shadow:-2px 1px 20px rgba(22,175,199,1);
+    font-weight:normal;
+    font-style:italic;
+    text-transform:uppercase;color:rgb(209, 214, 48);
+    letter-spacing:1pt;
+    word-spacing:5pt;
+    font-size:45px;
+    text-align:center;
+    font-family:tahoma, verdana, arial, sans-serif;
+    line-height:0;
+    opacity: 0;
+    /* Animation Stuff */
+    animation: creativeFadeIn ease 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+}
+
+#designer {
+    background-image: url(https://images.unsplash.com/photo-1515405295579-ba7b45403062?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
+    background-blend-mode: multiply;
+    background-color: rgba(131, 127, 127, 0.712);
+    flex: 1;
+    text-shadow:-5px -1px 20px rgba(215,56,255,1);font-weight:normal;
+    font-style:italic;
+    text-transform:uppercase;
+    color:rgb(174, 38, 184);
+    letter-spacing:-2pt;
+    word-spacing:0pt;
+    font-size:45px;
+    text-align:center;
+    line-height:0;
+    transform: translateY(-1000px);
+    /* Animation Stuff */
+    animation: designerFlyIn ease 1.5s;
+    transform-origin: 50% 50%;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+/* Developer Coming Down Animation */
+@keyframes animationFrames{
+    0% {
+      opacity:0;
+      transform:  translate(0px,-1000px)  ;
+    }
+    100% {
+      opacity:1;
+      transform:  translate(0px,0px)  ;
+    }
+  }
+  /* Designer Going Up Animation */
+@keyframes designerFlyIn{
+    0% {
+      opacity:0;
+      transform:  translate(0px, 1000px)  ;
+    }
+    100% {
+      opacity:1;
+      transform:  translate(0px,0px)  ;
+    }
+  }
+  @keyframes creativeFadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+/* END NAME SECTION */
+
+
+
+/* START ABOUT ME SECTION */
+#me {
+    background-color: #08131E;
+}
+
+.myImg {
+    width: 200px;
+    height: 200px;
+    background-image: url(https://media.licdn.com/dms/image/C5603AQGXmGjqssMezw/profile-displayphoto-shrink_200_200/0?e=1553126400&v=beta&t=Fwy9PWx4WKKfbVOA1rj5DAu9EcK0AGa6GPGGHXt9Vko);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+    border-radius: 50px;
+}
+
+.aboutTextBox {
+    width: 800px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.story {
+    font-size: large;
+}
+/* END ABOUT ME SECTION */
+
+/* START SKILLS SECTION */
+
+#skills {
+    background-color: #08131E;
+}
+
+.gridStyle {
+    height: 200px;
+    background-color: rgba(27, 44, 138, 0.377);
+    background-blend-mode: color-dodge;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+/* logos inside of the skills table in the skills section */
+#html {
+    background-image: url(http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png); 
+}
+
+#css {
+    background-image: url(https://i2.wp.com/www.worldeatingdisordersday.org/wp-content/uploads/2016/03/css-logo.png);
+}
+
+#javaScript {
+    background-image: url(http://pluspng.com/img-png/logo-javascript-png-html-code-allows-to-embed-javascript-logo-in-your-website-587.png);
+}
+
+#express {
+    background-image: url(https://cdn-web.studio3t.com/knowledge-base/wp-content/uploads/expressjs-logo.png?x97270);
+}
+
+#nodejs {
+    background-image: url(https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png);
+}
+
+#react {
+    background-image: url(https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png);
+}
+
+#python {
+    background-image: url(https://www.python.org/static/community_logos/python-logo-inkscape.svg);
+}
+
+#mongoDB {
+    background-image: url(https://doc.octoperf.com/monitoring/create-connection/mongodb/img/mongodb-logo.png);
+}
+
+#django {
+    background-image: url(http://www.indiainfotech.com/hire/img/django.png);
+}
+
+/* END SKILLS SECTION */
+
+/* START PROJECTS SECTION */
+
+#projexts {
+    background-color: #08131E;
+}
+
+#myCarousel {
+    border: 5px solid royalblue;
+}
+
+.pic {
+    max-width: 70vw;
+    max-height: 70vh;
+}
+
+.carousel-caption {
+    margin-bottom: 330px;
+}
+
+/* END PROJECTS SECTION */
+
+/* START CALL TO ACTION */
+
+#action {
+    background-color: #08131E;
+}
+
+.lineBoi {
+    border-bottom: 5px solid white;
+    border-width: 10px;
+    padding-bottom: 40px;
+    
+}
+
+.email {
+    height: 150px;
+    width: 150px; 
+    background-image: url("images/email.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.resume {
+    height: 150px;
+    width: 150px;
+    background-image: url("images/resume.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.gitHub {
+    height: 150px;
+    width: 150px;
+    background-image: url("images/github.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.phone {
+    height: 150px;
+    width: 150px;
+    background-image: url("https://cdn4.iconfinder.com/data/icons/rcons-phone/16/handset_round-2-512.png");
+    background-position: center;
+    background-size: cover;
+}

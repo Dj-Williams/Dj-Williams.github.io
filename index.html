@@ -1,80 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>David's Portfolio!</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Custom Font -->
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 </head>
+
+
 <!-- nav bar w/ links -->
-<div class="nav">
-        <ul>
-            <a href="#box1"> 
-                <li class="Nav1">About</li>
-            </a>
-            <a href="#box2">  
-                <li class="Nav2">Projects</li>
-            </a>
-            <a href="#box3">
-                <li class="Nav3">Skills</li>
-            </a>
-            <a href="#box4">
-                <li class="Nav4">Social</li>
-            </a>
-        </ul>
-    </div>
+<ul class="nav nav-fill">
+    <li class="Nav1">
+        <a href="#box1">
+            About
+        </a>
+    </li>
+    <li class="Nav2">
+        <a href="#box2">
+            Projects
+        </a>
+    </li>
+    <li class="Nav3">
+        <a href="#box3">
+            Skills
+        </a>
+    </li>
+    <a href="#box4">
+        <li class="Nav4">Social</li>
+    </a>
+</ul>
 <!-- End of nav bar -->
+
 <body>
     <!-- The big container governs all the content into a grid -->
     <div class="bigContainer">
         <!-- This is the first box w/ Nav -->
-        <div class="container1" id="box1">
-                <div class="textbox">
-                    <h1>David J. Williams</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam deserunt illum eum accusantium dolores. Facere officiis ab aliquid quaerat eveniet mollitia qui officia! Doloremque possimus nesciunt totam quam molestias nihil.</p>
-                </div>
+        <div class="container1 container-fluid" id="box1">
+            <div class="textbox container-fluid">
+                <h1>David J. Williams</h1>
+                <p class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam deserunt illum eum accusantium
+                    dolores. Facere officiis ab aliquid quaerat eveniet mollitia qui officia! Doloremque possimus nesciunt
+                    totam quam molestias nihil.</p>
+            </div>
         </div>
         <!-- This is the first parallax  -->
         <div class="laxOne">
-                <div class="laxTwo"></div>
-            </div>
-    <!-- This is the second container -->
+            <div class="laxTwo"></div>
+        </div>
+        <!-- This is the second container -->
         <div class="container2" id="box2">
             <div class="champlooBox">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis quisquam, eos nostrum architecto nihil minima facere sunt amet, id vel perspiciatis maxime ut veniam illo? Cupiditate earum a possimus!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quis quisquam, eos nostrum architecto
+                    nihil minima facere sunt amet, id vel perspiciatis maxime ut veniam illo? Cupiditate earum a possimus!</p>
             </div>
             <div class="realTalkBox">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iure id dolores ipsa laudantium quam facilis illum, eligendi eum amet quis molestias magnam recusandae temporibus quia, illo dicta quasi! Consequuntur quasi vero ad corrupti nobis accusamus beatae incidunt, illo eaque. </p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error iure id dolores ipsa laudantium quam facilis
+                    illum, eligendi eum amet quis molestias magnam recusandae temporibus quia, illo dicta quasi! Consequuntur
+                    quasi vero ad corrupti nobis accusamus beatae incidunt, illo eaque. </p>
             </div>
         </div>
-    <!-- Third container -->
-    <div class="container3" id="box3">
+        <!-- Third container -->
+        <div class="container3" id="box3">
             <table>
-                    <tr>
-                        <th id="protools">ProTools 10</th>
-                        <th id="flstudio">FL Studio 12</th>
-                        <th id="finalcut">Final Cut Pro</th>
-                    </tr>
-                    <tr>
-                        <td>Adobe Photoshop</td>
-                        <td>Adobe AfterEffects</td>
-                        <td>Gimp 2</td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td>CSS</td>
-                        <td>JavaScript</td>
-                    </tr>
-                    </tr>
-                </table>
+                <tr>
+                    <th id="protools">ProTools 10</th>
+                    <th id="flstudio">FL Studio 12</th>
+                    <th id="finalcut">Final Cut Pro</th>
+                </tr>
+                <tr>
+                    <td>Adobe Photoshop</td>
+                    <td>Adobe AfterEffects</td>
+                    <td>Gimp 2</td>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>JavaScript</td>
+                </tr>
+                </tr>
+            </table>
         </div>
-    <!-- Fourth container -->
-    <div class="container4" id="box4">
+        <!-- Fourth container -->
+        <div class="container4" id="box4">
             <p>This is where the social links go.</p>
         </div>
 
     </div>
 </body>
+
 </html>
