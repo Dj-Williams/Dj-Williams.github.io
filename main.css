@@ -9,8 +9,8 @@ body {
 }
 
 .contentContainer {
-    height: 98vh;
-    width: 97vw;
+    height: 100vh;
+    width: 100vw;
     color: white;
     background-color: black;
 }
@@ -30,12 +30,13 @@ body {
 #nameSplash {
     display: flex;
     flex: 1;
-    margin: 0;
+    margin: 0; 
 }
 
 #bam {
     position: absolute;
     z-index: 10;
+    height: 100vh;
     width: 100vw;
     opacity: 0;
     background-image: url(https://images.unsplash.com/photo-1505629557752-b84ec6489bef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
@@ -50,6 +51,7 @@ body {
 }
 
 #welcome {
+    text-align: center;
     font-size: 100px;
     opacity: 0;
     /* Animation Stuff */
@@ -103,6 +105,7 @@ body {
     background-position: center;
     background-blend-mode: multiply;
     background-color: rgba(143, 41, 143, 0.815);
+    height: 100vh;
     flex: 1;
     text-shadow:-2px 1px 20px rgb(28, 22, 214);
     font-weight:normal;
@@ -123,6 +126,7 @@ body {
     background-color: rgba(131, 127, 127, 0.616);
     background-position: center;
     background-size: 100%;
+    height: 100vh;
     flex: 1;
     text-shadow:-2px 1px 20px rgba(22,175,199,1);
     font-weight:normal;
@@ -145,6 +149,7 @@ body {
     background-image: url(https://images.unsplash.com/photo-1515405295579-ba7b45403062?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
     background-blend-mode: multiply;
     background-color: rgba(131, 127, 127, 0.712);
+    height: 100vh;
     flex: 1;
     text-shadow:-5px -1px 20px rgba(215,56,255,1);font-weight:normal;
     font-style:italic;
@@ -223,7 +228,7 @@ body {
 .myImg {
     width: 200px;
     height: 200px;
-    background-image: url(https://media.licdn.com/dms/image/C5603AQGXmGjqssMezw/profile-displayphoto-shrink_200_200/0?e=1553126400&v=beta&t=Fwy9PWx4WKKfbVOA1rj5DAu9EcK0AGa6GPGGHXt9Vko);
+    background-image: url(/images/FullSizeR_03\ copy.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -254,12 +259,19 @@ body {
 
 .gridStyle {
     height: 200px;
-    background-color: rgba(27, 44, 138, 0.377);
+    width: 100vw;
+    /* background-color: rgba(27, 44, 138, 0.377); */
     background-blend-mode: color-dodge;
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
 }
+
+/* #frontEndSkills {
+    /* width: 100%; */
+    /* height: 33%; */
+    /* border: 2px solid gold; */
+/* }  */
 
 /* logos inside of the skills table in the skills section */
 #html {
@@ -295,7 +307,7 @@ body {
 }
 
 #django {
-    background-image: url(http://www.indiainfotech.com/hire/img/django.png);
+    background-image: url(http://aculance.com/images/django_logo.png);
 }
 
 /* END SKILLS SECTION */
@@ -365,3 +377,209 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+/* ↓ Arrow Animation CSS Code by James Muspratt ↓ */
+@-webkit-keyframes pulse {
+    0% {
+      opacity: 0;
+      background-position: center top;
+      -moz-background-size: 0 auto;
+      -o-background-size: 0 auto;
+      -webkit-background-size: 0 auto;
+      background-size: 0 auto;
+    }
+    10% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      -moz-background-size: 75% auto;
+      -o-background-size: 75% auto;
+      -webkit-background-size: 75% auto;
+      background-size: 75% auto;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      background-position: center bottom;
+      -moz-background-size: 0 auto;
+      -o-background-size: 0 auto;
+      -webkit-background-size: 0 auto;
+      background-size: 0 auto;
+    }
+  }
+  @-moz-keyframes pulse {
+    0% {
+      opacity: 0;
+      background-position: center top;
+      -moz-background-size: 0 auto;
+      -o-background-size: 0 auto;
+      -webkit-background-size: 0 auto;
+      background-size: 0 auto;
+    }
+    10% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      -moz-background-size: 75% auto;
+      -o-background-size: 75% auto;
+      -webkit-background-size: 75% auto;
+      background-size: 75% auto;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      background-position: center bottom;
+      -moz-background-size: 0 auto;
+      -o-background-size: 0 auto;
+      -webkit-background-size: 0 auto;
+      background-size: 0 auto;
+    }
+  }
+  @-ms-keyframes pulse {
+    0% {
+      opacity: 0;
+      background-position: center top;
+      -moz-background-size: 0 auto;
+      -o-background-size: 0 auto;
+      -webkit-background-size: 0 auto;
+      background-size: 0 auto;
+    }
+    10% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      -moz-background-size: 75% auto;
+      -o-background-size: 75% auto;
+      -webkit-background-size: 75% auto;
+      background-size: 75% auto;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      background-position: center bottom;
+      -moz-background-size: 0 auto;
+      -o-background-size: 0 auto;
+      -webkit-background-size: 0 auto;
+      background-size: 0 auto;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      opacity: 0;
+      background-position: center top;
+      -moz-background-size: 0 auto;
+      -o-background-size: 0 auto;
+      -webkit-background-size: 0 auto;
+      background-size: 0 auto;
+    }
+    10% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      -moz-background-size: 75% auto;
+      -o-background-size: 75% auto;
+      -webkit-background-size: 75% auto;
+      background-size: 75% auto;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      background-position: center bottom;
+      -moz-background-size: 0 auto;
+      -o-background-size: 0 auto;
+      -webkit-background-size: 0 auto;
+      background-size: 0 auto;
+    }
+  }
+  
+  .scroll-down {
+    margin: 0;
+    border: 2px solid #fff;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    width: 70px;
+    height: 70px;
+    margin-left: -50px;
+    margin-top: -50px;
+    opacity: 0;
+    /* Animation Stuff */
+    animation: creativeFadeIn ease 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 11s;
+  }
+  .scroll-down a {
+    display: block;
+    opacity: 0;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    -moz-background-size: 0 auto;
+    -o-background-size: 0 auto;
+    -webkit-background-size: 0 auto;
+    background-size: 0 auto;
+    -webkit-animation: pulse 1.5s 0s infinite normal ease forwards;
+    -moz-animation: pulse 1.5s 0s infinite normal ease forwards;
+    -o-animation: pulse 1.5s 0s infinite normal ease forwards;
+    animation: pulse 1.5s 0s infinite normal ease forwards;
+    background-image: url("https://jamesmuspratt.com/codepen/img/arrow-down.svg");
+    background-repeat: no-repeat;
+  }
+  .scroll-down a:before, .scroll-down a:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("https://jamesmuspratt.com/codepen/img/arrow-down.svg") no-repeat center top;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  .scroll-down a:before {
+    -webkit-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+    -moz-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+    -o-animation: pulse 1.5s 0.25s infinite normal ease forwards;
+    animation: pulse 1.5s 0.25s infinite normal ease forwards;
+  }
+  .scroll-down a:after {
+    -webkit-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+    -moz-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+    -o-animation: pulse 1.5s 0.5s infinite normal ease forwards;
+    animation: pulse 1.5s 0.5s infinite normal ease forwards;
+  }
+  .scroll-down a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* ꜛ Arrow Animation CSS Code by James Muspratt ꜛ */
+  
